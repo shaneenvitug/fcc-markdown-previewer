@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:wght@700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,218 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  max-width: 70%;
+  margin: 0 auto;
+  border: 1px solid #DBD9DC;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 8px 1px rgba(219, 217, 220, 1);
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#design {
+  background-color: #F5F5F5;
+  height: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+button {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0 0.2rem;
+}
+
+#red {
+  background-color: #F33D48;
+}
+
+#yellow {
+  background-color: #EEC444;
+}
+
+#green {
+  background-color: #00A489;
+}
+
+#markdown {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  color: #A0AAC0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+  border: 0.05rem solid #E8E8E8;
+}
+
+img {
+  width: 1.8rem;
+  height: auto;
+  border-radius: 0.2rem;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+#prev {
+  padding: 1rem;
+  color: #A0AAC0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+  border: 0.05rem solid #E8E8E8;
+}
+
+textarea {
+  height: 84%;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  outline: none;
+  font-family: 'Karma', serif;
+  color: #909090;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0 1.5rem;
+  border-right: 0.1rem solid #DBD9DC;
+  overflow-y: scroll;
+}
+
+#main {
+  height: inherit;
+}
+
+#preview {
+  width: 100%;
+  height: 84%;
+  display: inline-block;
+  color: #343434;
+  font-family: 'Lato', sans-serif;
+  padding: 0 1.5rem;
+  border-left: 0.1rem solid #DBD9DC;
+  overflow: hidden;
+  overflow-y: scroll;
+  line-height: 2rem;
+}
+
+#preview blockquote {
+  border-left: 0.25rem solid #DDDDDD;
+  margin-left: 0.1rem;
+  padding-left: 0.8rem;
+  line-height: 1.5rem;
+}
+
+#preview pre {
+  background-color: #F8F8F8;
+  border: none;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  font-family: monospace;
+  border: 0.05rem solid #CCCCCC;
+}
+
+#preview :not(pre) code {
+  background: #F8F8F8;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.7rem;
+  border-radius: 0.1rem;
+  border: 0.05rem solid #CCCCCC;
+  margin: 0 0.2rem;
+}
+
+#preview ol,
+ul {
+  margin-left: 1.5rem;
+  line-height: 1.5rem;
+}
+
+#preview a {
+  text-decoration: none;
+  color: #5792CB;
+}
+
+#preview a:hover {
+  text-decoration: underline;
+}
+
+#preview h1 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#preview h2 {
+  border-bottom: 2px solid #CCCCCC;
+  margin-bottom: 1rem;
+}
+
+#preview img {
+  width: 1rem;
+  height: auto;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #363638;
+  color: white;
+  padding: 2em;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+footer img {
+  width: 2.5em;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+#info {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#info a {
+  color: rgb(181, 100, 100);
+}
+
+#info p {
+  color: #FAEFE9;
+  line-height: 2em;
+  font-size: 0.8rem;
 }

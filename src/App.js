@@ -1,24 +1,32 @@
 import React, { useState } from 'react';
-import marked from 'marked';
 
 import Editor from './components/Editor';
 import Preview from './components/Preview';
+import Design from './components/Design';
 
-const defaultText = `
-# Hi
-## How are you?
-[I'm an inline-style link](https://www.google.com)
-Inline \`code\` has \`back-ticks around\` it.
-\`\`\`javascript
+const defaultText = `# hello 
+## This is a Markdown editor
+
+> Markdown is a lightweight markup language, allowing people "to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)".
+
+see [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+
+- Type some Markdown on the left
+- See HTML on the right
+- Magic
+
+You can also:
+
+1. *Emphasise* and make text **bold**
+1. Add Inline \`code\` which has \`back-ticks around\` it.
+1. Blocks of code are either fenced by lines with three back-ticks \`\`\`
+
+\`\`\`
 var s = "JavaScript syntax highlighting";
 alert(s);
 \`\`\`
-1. First ordered list item
-2. Another item
-> Blockquotes are very handy in email to emulate reply text.
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-**bold text**
+
+thanks for dropping by! stay safe ![heart emoji](heart-emoji.png)
 `;
 
 function App() {
@@ -26,8 +34,11 @@ function App() {
 
   return (
     <div className="App">
-      <Editor setText={setText} text={text} />
-      <Preview text={text} />
+      <Design />
+      <div id="main">
+        <Editor setText={setText} text={text} />
+        <Preview text={text} />
+      </div>
     </div>
   );
 }
