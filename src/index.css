@@ -227,3 +227,94 @@ footer img {
   line-height: 2em;
   font-size: 0.8rem;
 }
+
+@media (max-width: 575.98px) {
+  .App {
+    max-width: 95%;
+    margin-top: 0.5rem;
+    height: auto;
+  }
+
+  #markdown {
+    padding: 0.4rem;
+    font-size: 0.5rem;
+  }
+
+  #markdown img {
+    width: 0.7rem;
+    height: auto;
+    border-radius: 0.1rem;
+  }
+
+  #prev {
+    padding: 0.4rem;
+    font-size: 0.5rem;
+  }
+
+  button {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+  textarea {
+    font-size: 0.4rem;
+    padding: 0.1rem 0.5rem;
+    border-right: 0.05rem solid #DBD9DC;
+    height: 15rem;
+    border-bottom: 0.1rem solid #DBD9DC;
+  }
+
+  #preview {
+    padding: 0.1rem 0.5rem 1.5rem 0.5rem;
+    border-left: 0.05rem solid #DBD9DC;
+    line-height: 1rem;
+    font-size: 0.6rem;
+  }
+
+  #preview blockquote {
+    border-left: 0.15rem solid #DDDDDD;
+    margin-left: 0.1rem;
+    padding-left: 0.4rem;
+    line-height: 0.9rem;
+  }
+
+  #preview blockquote>p {
+    margin-bottom: 0.5rem;
+  }
+
+  #preview pre {
+    /* padding: 0.05rem 0.2rem; */
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+    border: 0.1px solid rgba(171, 171, 171, 0.17);
+    margin: 0.5rem 0;
+  }
+
+  #preview :not(pre) code {
+    /* padding: 0.05rem 0.2rem; */
+    font-size: 0.4rem;
+    border-radius: 0.1rem;
+    border: 0.5px solid rgba(171, 171, 171, 0.2);
+    margin: 0.1rem 0.1rem;
+    line-height: 0.1rem;
+  }
+
+  #preview ol,
+  ul {
+    margin-left: 1.2rem;
+    line-height: 1rem;
+  }
+
+  #preview h2 {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 0.2rem;
+  }
+
+  #preview img {
+    width: 0.5rem;
+  }
+
+  #footer img {
+    width: 1.8rem;
+  }
+}
